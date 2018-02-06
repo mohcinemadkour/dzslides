@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 
 <meta charset="utf-8">
-<title>The Title Of Your Presentation</title>
+<title>Role Model</title>
+<!-- 
+What do you perceive to be the characteristics of this 
+person enabling their success? How are you yourself like
+and unlike this person? How has this person influenced you 
+and others, and how do you use what you have learned from 
+this person? 
+-->
 
 <!-- Optional: on every page: header and footer -->
 <header>
-  Hi, I'm a header
+  LIS500 Code and Power
 </header>
 
-<footer>by John Doe</footer>
+<footer>by Evan Kivolowitz</footer>
 
 <!-- Your Slides -->
 <!-- One section is one slide -->
 
 <section>
     <!-- This is the first slide -->
-    <h1>My Presentation</h1>
-    <footer>by John Doe</footer>
+    <h1>Everette Taylor</h1>
+    <footer>by Evan Kivolowitz</footer>
 </section>
 
 <section>
-    <p>Some random text: But I've never been to the moon! You can see how I lived before I met you. Also Zoidberg.
-    I could if you hadn't turned on the light and shut off my stereo.</p>
+  <h3>Who is Everette Taylor?</h3>
+  <ul>
+    <li class="next">Founder and CEO of MilliSense</li>
+    <li class="next">From Richmond, VA</li>
+    <li class="next">Raised by his mom in a single parent home</li>
+    <li class="next">Grew up in the projects</li>
+  </ul>
+</section>
+<section>
+  <h3>Who is Everette Taylor?</h3>
+  <ul>
+    <li class="next">Homeless when he was 18</li>
+    <li class="next">Landed his first job at a marketing firm while homeless</li>
+    <li class="next">Started his first company when he was 19</li>
+    <li class="next">Became head of marketing at a tech company at 23</li>
+    <li class="next">Now currently CEO at MilliSense (contract marketing company)</li>
+  </ul>
+</section>
+<section class="special-section">
+  <blockquote>
+    But growing up was actually pretty normal to me because when you grow up and struggle that’s all you know
+  </blockquote> 
+  <p class="next special"><i>- Everette Taylor</i></p>
 </section>
 
-<section>
+<!-- <section>
     <h3>An incremental list</h3>
     <ul>
       <li class="next">Item 1
@@ -57,7 +85,7 @@
       <span class="next" next-order="6">order</span>
       <span class="next" next-order="8">!</span>
     </p>
-</section>
+</section> -->
 
 <section>
   <blockquote>
@@ -102,12 +130,16 @@
 <style>
   html, .view body { background-color: black; counter-reset: slideidx; }
   body, .view section {
-    background-color: white; border-radius: 12px;
+    background-color: #DFE2DB; border-radius: 12px;
     font-family: 'Oswald', arial, serif;
   }
 
   section, .view head > title {
       font-size: 2rem;
+  }
+
+  .special-section {
+    background-color:#000;
   }
 
   .view section:after {
@@ -162,7 +194,12 @@
     visibility: visible; /* override the default behavior where next is hidden */
     background-color: inherit; /* and disable highlighting instead */
   }
-
+  .special {
+    margin: 0px 50px;
+    font-size: 3rem;
+    color: #DFE2DB;
+    background-color: #000;
+  }
   p {
     margin: 75px 75px 0 75px;
     font-size: 3rem;
@@ -175,9 +212,9 @@
   }
 
   blockquote {
-    height: 100%;
+    height: 80%;
     background-color: black;
-    color: white;
+    color:#DFE2DB;
     font-size: 3.75rem;
     padding: 50px;
   }
